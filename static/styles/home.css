@@ -1,18 +1,24 @@
 body {
-    background-color: rgb(189, 189, 189);
+    background-color: hsla(0, 0%, 83%, 0.185);
 }
 h2 {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
-    padding-left: 20px;
-    background-color: darkcyan;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #dd4b1e;
     border-radius: 5px;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 #weatherForm {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
-    padding: 20px;
+    padding: 40px;
+    text-align: center;
 }
 
 #weatherInput {
@@ -24,7 +30,7 @@ h2 {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     color: white;
-    background-color: darkcyan;
+    background-color: #dd4b1e;
     padding: 5px 20px;
     border-radius: 5px;
     margin-top: 20px;
@@ -32,4 +38,10 @@ h2 {
 
 #weatherSubmit:hover {
     cursor: pointer;
+    background-color: hsl(14, 81%, 41%);
+}
+
+#weatherSubmit:active {
+    box-shadow: 0 5px hsl(14, 81%, 41%);
+    transform: translateY(4px);
 }
