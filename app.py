@@ -14,8 +14,8 @@ def render_results():
 
     api_key = get_api_key()
     data = get_weather_results(city_name, api_key)
-    temp = "{0:.2f}".format(data["main"]["temp"])
-    feels_like = "{0:.2f}".format(data["main"]["feels_like"])
+    temp = "{}".format(data["main"]["temp"])
+    feels_like = "{}".format(data["main"]["feels_like"])
     weather = data["weather"][0]["main"]
     location = data["name"]
     wind_speed = data["wind"]["speed"]
