@@ -13,13 +13,14 @@ def render_results():
     city_name = request.form['city']
 
     api_key = get_api_key()
-    data = get_weather_results(city_name, api_key)
-    temp = "{}".format(data["main"]["temp"])
+    data = get_weather_results(city_name, api_key)   
+   
+    temp = "{}".format(data["main"]["temp"]) 
     feels_like = "{}".format(data["main"]["feels_like"])
     weather = data["weather"][0]["main"]
     location = data["name"]
     wind_speed = data["wind"]["speed"]
-    
+   
     
 
     return render_template('results.html',
@@ -32,7 +33,7 @@ def get_api_key():
     return config['OPENWEATHERMAP']['api']
 
 def get_weather_results(city_name, api_key):
-    api_url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(city_name, api_key)
+    api_url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid={}&units=metric'.format(city_name, api_key)
     r = requests.get(api_url)
     return r.json()
 

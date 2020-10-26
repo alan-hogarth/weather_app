@@ -7,11 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <style>
+        div {
+          background-image: url('https://images.pexels.com/photos/2310648/pexels-photo-2310648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+          background-size: cover;
+        }
+    </style>
 <div id="weatherResults">
     <h3>Weather in {{ location }}</h3>
-    <h2>{{ temp }}° K</h2>
+    <h2>{{ temp }}° C</h2>
     <h3>{{ weather }}</h3>
-    <h4>Feels like: {{ feels_like }}° K</h4>
+    <h4>Feels like: {{ feels_like }}° C</h4>
     <h4>Wind Speed: {{ wind_speed }} knots</h4>    
 </div>
 </body>

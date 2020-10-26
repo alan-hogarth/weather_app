@@ -7,7 +7,6 @@ h2 {
     color: white;
     padding-left: 60px;
     padding-right: 60px;
-    background-color: #dd4b1e;
     border-radius: 5px;
     text-align: center;
     margin-left: 70px;
@@ -19,18 +18,19 @@ h2 {
     font-size: 24px;
     padding: 40px;
     text-align: center;
+    color: white;
 }
 
 #weatherInput {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
-}
+  }
 
 #weatherSubmit {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     color: white;
-    background-color: #dd4b1e;
+    background-color: #f5620c;
     padding: 5px 20px;
     border-radius: 5px;
     margin-top: 20px;
